@@ -51,7 +51,7 @@
 - (IBAction)changeGreeting:(id)sender {
     self.username = self.textField.text;
     if ([self.username length]==0)
-        self.username = @"Vivien";
+        self.username = @"Viviev3n";
     self.label.text = [[NSString alloc]initWithFormat:@"Hello, %@!",self.username];
 }
 
