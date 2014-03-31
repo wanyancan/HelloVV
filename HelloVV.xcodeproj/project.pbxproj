@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3451D3E8160C88E0001A9451 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3451D3E7160C88E0001A9451 /* Default-568h@2x.png */; };
 		34BD310415E8C3C1007C0FF9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BD310315E8C3C1007C0FF9 /* UIKit.framework */; };
 		34BD310615E8C3C1007C0FF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BD310515E8C3C1007C0FF9 /* Foundation.framework */; };
 		34BD310815E8C3C1007C0FF9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BD310715E8C3C1007C0FF9 /* CoreGraphics.framework */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3451D3E7160C88E0001A9451 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		34BD30FF15E8C3C1007C0FF9 /* HelloVV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloVV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BD310315E8C3C1007C0FF9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		34BD310515E8C3C1007C0FF9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -52,6 +54,7 @@
 		34BD30F415E8C3C0007C0FF9 = {
 			isa = PBXGroup;
 			children = (
+				3451D3E7160C88E0001A9451 /* Default-568h@2x.png */,
 				34BD310915E8C3C1007C0FF9 /* HelloVV */,
 				34BD310215E8C3C1007C0FF9 /* Frameworks */,
 				34BD310015E8C3C1007C0FF9 /* Products */,
@@ -111,6 +114,7 @@
 				34BD30FB15E8C3C1007C0FF9 /* Sources */,
 				34BD30FC15E8C3C1007C0FF9 /* Frameworks */,
 				34BD30FD15E8C3C1007C0FF9 /* Resources */,
+				3450581915E8F48A00E63A8E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -156,10 +160,27 @@
 				34BD310E15E8C3C1007C0FF9 /* InfoPlist.strings in Resources */,
 				34BD311715E8C3C1007C0FF9 /* MainStoryboard_iPhone.storyboard in Resources */,
 				34BD311A15E8C3C1007C0FF9 /* MainStoryboard_iPad.storyboard in Resources */,
+				3451D3E8160C88E0001A9451 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3450581915E8F48A00E63A8E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ] || [ \"${PLATFORM_NAME}\" == \"ipados\" ]; then\n/Applications/Xcode.app/Contents/Developer/iphoneentitlements/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		34BD30FB15E8C3C1007C0FF9 /* Sources */ = {
@@ -256,6 +277,7 @@
 		34BD312115E8C3C1007C0FF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloVV/HelloVV-Prefix.pch";
 				INFOPLIST_FILE = "HelloVV/HelloVV-Info.plist";
@@ -267,6 +289,7 @@
 		34BD312215E8C3C1007C0FF9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloVV/HelloVV-Prefix.pch";
 				INFOPLIST_FILE = "HelloVV/HelloVV-Info.plist";
@@ -294,6 +317,7 @@
 				34BD312215E8C3C1007C0FF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

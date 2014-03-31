@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HelloVVViewController : UIViewController
+@interface HelloVVViewController : UIViewController <UITextFieldDelegate>
+@property (copy, nonatomic) NSString *username;
 
 @end
