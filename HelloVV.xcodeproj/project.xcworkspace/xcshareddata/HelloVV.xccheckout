@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>53A41DF0-810C-46A0-BDD6-B12E7E26FF08</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HelloVV</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>60F89E45-B746-4E73-8E40-3A30CA226DA9</key>
+		<string>https://github.com/wanyancan/HelloVV.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HelloVV.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>60F89E45-B746-4E73-8E40-3A30CA226DA9</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/wanyancan/HelloVV.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>60F89E45-B746-4E73-8E40-3A30CA226DA9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>60F89E45-B746-4E73-8E40-3A30CA226DA9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HelloVVgit</string>
+		</dict>
+	</array>
+</dict>
+</plist>
